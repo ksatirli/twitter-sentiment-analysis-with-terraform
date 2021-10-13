@@ -15,7 +15,3 @@
 
 # Crash log files
 crash.log
-
-# Credentials
-clusters/aks/private_ssh_key
-clusters/gke/account.json
