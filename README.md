@@ -13,7 +13,7 @@
 
 ## Requirements
 
-* Terraform CLI `1.0.8` or newer
+* Terraform CLI `1.0.9` or newer
 * a Google Cloud [account](https://cloud.google.com/gcp)
 * a Twitter  App [token](https://developer.twitter.com/en/portal/projects-and-apps)
 ## Notes
