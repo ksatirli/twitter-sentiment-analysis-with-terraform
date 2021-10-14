@@ -24,8 +24,8 @@ output "url_workflows_overview" {
 
 # locals values for convenient usage of long Workflows URLs
 locals {
-  workflow_details_url_prefix = "${local.console_url_prefix}/workflows/workflow/${var.google_project_region}"
-  workflow_details_url_suffix = "${google_workflows_workflow.sentiment_analysis.name}/executions?${local.console_url_suffix}"
+  workflow_details_url_prefix   = "${local.console_url_prefix}/workflows/workflow/${var.google_project_region}"
+  workflow_details_url_suffix   = "${google_workflows_workflow.sentiment_analysis.name}/executions?${local.console_url_suffix}"
   workflow_execution_url_suffix = "${google_workflows_workflow.sentiment_analysis.name}/create_execution?${local.console_url_suffix}"
 }
 

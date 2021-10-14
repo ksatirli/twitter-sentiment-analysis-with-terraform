@@ -98,7 +98,7 @@ locals {
 
   # A set of key/value label pairs to assign to all resources.
   # Each value may not exceed 63 characters
-  labels = { }
+  labels = {}
 
   # prefix and suffix for URLs for Google Cloud Console
   console_url_prefix = "https://console.cloud.google.com"
