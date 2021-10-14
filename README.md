@@ -106,7 +106,7 @@ as part of a blog post highlighting [new Workflow processing capabilities](https
 
 ## Author Information
 
-This repository is maintained by the contributors listed on [GitHub](https://github.com/ksatirli/pagerduty-x-terraform/graphs/contributors).
+This repository is maintained by the contributors listed on [GitHub](https://github.com/ksatirli/twitter-sentiment-analysis-with-terraform/graphs/contributors).
 
 ## License
 
