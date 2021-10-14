@@ -15,6 +15,7 @@
 
 * Terraform CLI `1.0.8` or newer
 * a Google Cloud [account](https://cloud.google.com/gcp)
+* a Twitter  App [token](https://developer.twitter.com/en/portal/projects-and-apps)
 ## Notes
 
 The code in this repository is based on work done by Google Developer Advocates [@meteatamel](https://github.com/meteatamel) and [@KrisBraun](https://github.com/KrisBraun)

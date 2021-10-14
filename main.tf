@@ -64,3 +64,17 @@ resource "google_project_service" "services" {
   }
 }
 
+# see https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/workflows_workflow
+resource "google_workflows_workflow" "sentiment_analysis" {
+  description     = var.workflow_description
+  labels          = local.labels
+  name            = local.google_project_id
+  region          = var.google_project_region
+  project         = google_service_account.sentiment_analysis.project
+  service_account = google_service_account.sentiment_analysis.id
+  source_contents = file("./templates/twitter-sentiment.yml")
+
+  depends_on = [
+    google_project_service.services
+  ]
+}

@@ -79,3 +79,27 @@ variable "project_services" {
   ]
 }
 
+# see https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/workflows_workflow#description
+variable "workflow_description" {
+  type        = string
+  description = "Description of the workflow provided by the user."
+  default     = "Twitter Sentiment Analysis"
+
+  validation {
+    condition     = (length(var.workflow_description) <= 1000)
+    error_message = "The Workflow Description must be at most 1000 characters long."
+  }
+}
+
+locals {
+  # Google Project IDs must be globally unique, so we are adding a random string
+  google_project_id = "${random_string.four.keepers.project_id}-${random_string.four.id}"
+
+  # A set of key/value label pairs to assign to all resources.
+  # Each value may not exceed 63 characters
+  labels = { }
+
+  # prefix and suffix for URLs for Google Cloud Console
+  console_url_prefix = "https://console.cloud.google.com"
+  console_url_suffix = "organizationId=${var.google_org_id}&project=${google_project.sentiment_analysis.project_id}"
+}

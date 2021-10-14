@@ -22,3 +22,14 @@ output "console_url_workflows_overview" {
   value       = "${local.console_url_prefix}/workflows?${local.console_url_suffix}"
 }
 
+# locals values for convenient usage of long Workflows URLs
+locals {
+  workflows_url_prefix = "${local.console_url_prefix}/workflows/workflow/${var.google_project_region}"
+  workflows_url_suffix = "${google_workflows_workflow.sentiment_analysis.name}/executions?${local.console_url_suffix}"
+}
+
+# see https://www.terraform.io/docs/language/values/outputs.html
+output "console_url_workflow_details" {
+  description = "URL for Workflow Details in Console"
+  value       = "${local.workflows_url_prefix}/${local.workflows_url_suffix}"
+}
