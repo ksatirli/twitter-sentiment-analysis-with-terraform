@@ -1,0 +1,14 @@
+# see https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/google_project#billing_account
+google_billing_account = "..."
+
+https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/google_project#folder_id
+google_folder_id = ...
+
+# see https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/google_project#org_id
+google_org_id = ...
+
+# see https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/google_project#name
+google_project_name = "..."
+
+# see https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/google_project#project_id
+google_project_id = "..."
