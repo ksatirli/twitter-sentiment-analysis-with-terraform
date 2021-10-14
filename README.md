@@ -7,6 +7,7 @@
 - [Twitter Sentiment Analysis](#twitter-sentiment-analysis)
   - [Table of Contents](#table-of-contents)
   - [Requirements](#requirements)
+  - [Notes](#notes)
   - [Author Information](#author-information)
   - [License](#license)
 
@@ -14,6 +15,10 @@
 
 * Terraform CLI `1.0.8` or newer
 * a Google Cloud [account](https://cloud.google.com/gcp)
+## Notes
+
+The code in this repository is based on work done by Google Developer Advocates [@meteatamel](https://github.com/meteatamel) and [@KrisBraun](https://github.com/KrisBraun)
+as part of a blog post highlighting [new Workflow processing capabilities](https://cloud.google.com/blog/topics/developers-practitioners/analyzing-twitter-sentiment-new-workflows-processing-capabilities).
 
 ## Author Information
 
