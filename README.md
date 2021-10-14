@@ -7,6 +7,7 @@
 - [Twitter Sentiment Analysis](#twitter-sentiment-analysis)
   - [Table of Contents](#table-of-contents)
   - [Requirements](#requirements)
+  - [Usage](#usage)
   - [Notes](#notes)
   - [Author Information](#author-information)
   - [License](#license)
@@ -16,6 +17,17 @@
 * Terraform CLI `1.0.9` or newer
 * a Google Cloud [account](https://cloud.google.com/gcp)
 * a Twitter  App [token](https://developer.twitter.com/en/portal/projects-and-apps)
+
+## Usage
+
+```json
+{
+  "bearerToken": "AAA...2Ho",
+  "twitterHandle": "ksatirli",
+  "maxResults": "100"
+}
+```
+
 ## Notes
 
 The code in this repository is based on work done by Google Developer Advocates [@meteatamel](https://github.com/meteatamel) and [@KrisBraun](https://github.com/KrisBraun)

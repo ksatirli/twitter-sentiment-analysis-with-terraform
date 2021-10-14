@@ -75,7 +75,8 @@ variable "project_services" {
   description = "List of services to enable."
 
   default = [
-    "workflows.googleapis.com"
+    "language.googleapis.com",
+    "workflows.googleapis.com",
   ]
 }
 
