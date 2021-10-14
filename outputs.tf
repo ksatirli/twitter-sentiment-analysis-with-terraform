@@ -38,5 +38,5 @@ output "url_workflow_details" {
 # see https://www.terraform.io/docs/language/values/outputs.html
 output "url_workflow_execution" {
   description = "URL for Workflow Execution in Console"
-  value       = "${local.workflow_details_url_prefix}/${local.workflow_details_url_suffix}"
+  value       = "${local.workflow_details_url_prefix}/${local.workflow_execution_url_suffix}"
 }
